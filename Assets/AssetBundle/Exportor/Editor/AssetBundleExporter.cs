@@ -132,6 +132,8 @@ namespace ResetCore.NAsset
             CodeGener gener = new CodeGener("ResetCore.NAsset", "R");
             foreach(var kvp in assetBundleDict)
             {
+                if (kvp.Key == "none")
+                    continue;
                 foreach(var path in kvp.Value)
                 {
                     string name = kvp.Key + "_" + FileEx.GetFileNameWithoutExtention(path);
@@ -155,6 +157,8 @@ namespace ResetCore.NAsset
             CodeGener gener = new CodeGener("ResetCore.NAsset", "Bundles");
             foreach (var kvp in assetBundleDict)
             {
+                if (kvp.Key == "none")
+                    continue;
                 string name = kvp.Key;
                 string defName = name.Replace(" ", "_");
                 gener.AddMemberField(typeof(string), defName, (field) =>

@@ -15,8 +15,6 @@ namespace ResetCore.NAsset
     public class Bundles
     {
         
-        public static string none = "none";
-        
         public static string cube = "cube";
     }
 }

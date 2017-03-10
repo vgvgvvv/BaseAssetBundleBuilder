@@ -15,12 +15,6 @@ namespace ResetCore.NAsset
     public class R
     {
         
-        public static string none_ResourcesList = "none###ResourcesList";
-        
-        public static string none_New_Material = "none###New Material";
-        
-        public static string none_StreamingList = "none###StreamingList";
-        
         public static string cube_Cube = "cube###Cube";
         
         public static string cube_New_Material = "cube###New Material";
